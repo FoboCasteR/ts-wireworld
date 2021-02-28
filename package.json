@@ -1,0 +1,21 @@
+{
+  "name": "gof",
+  "private": true,
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "build:gh-pages": "parcel build index.html --public-url ./",
+    "eslint:check": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "eslint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "prettier:check": "prettier --parser typescript --single-quote --list-different \"src/**/*.{ts,tsx}\"",
+    "prettier:write": "prettier --parser typescript --single-quote --write \"src/**/*.{ts,tsx}\""
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.21.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.2"
+  }
+}
